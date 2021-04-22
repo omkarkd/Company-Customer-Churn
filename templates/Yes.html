@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<title>Prediction result</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+    body{
+          background-image:url("{{url_for('static',filename = 'pic3.jpg')}}");
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+       .footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    background-color: #000000;
+    padding: 10px 10px;
+    color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+	<div class="about">
+        <nav  class="navbar navbar-light" style="background-color: #000000; margin-bottom: 0px;">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="{{url_for('home')}}">Churn Prediction</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="{{url_for('predictor')}}">Predictor</a></li>
+              <li><a href="{{url_for('contact')}}">Contact Developer</a></li>
+            </ul>
+          </div>
+        </nav>
+	<center><p> <h2> Oops! Your customer is not happy. <br>Chances of churning is high. </h2></p>
+  <img src="../static/Sad.png" style="width:400px;height:400px;margin-top: 20px;"></center>
+	<div class="footer">
+            <div>Copyright © 2021 </div>
+            <div> Made by Omkar Kadam</div>
+        </div>
+</body>
+</html>

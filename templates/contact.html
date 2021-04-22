@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Demo.css') }}">
+</head>
+<body>
+
+    <div class="about">
+        <nav  class="navbar navbar-light" style="background-color: #000000; margin-bottom: 0px;">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="{{url_for('home')}}">Churn Prediction</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="{{url_for('predictor')}}">Predictor</a></li>
+              <li><a href="{{url_for('contact')}}">Contact Developer</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="inner-section">
+            <div class="image-wrapper">
+                <img src="../static/image.jpg" class="my-image">
+            </div>
+            <h1>About Developer</h1>
+            <p class="text">
+                Omkar Kadam is an Aspiring Data Scientist, ML and DL enthusiast and practitioner pursuing Master's in Data Science and Big Data Analytics from MIT World Peace University, Pune. Looking forward to making his mark in the data-driven world via analytical and practical skills. </p>
+            <p class="text">
+                Well-versed with programming skills in Python and Big Data Technology and Cloud. He is an ambitious person filled with enthusiasm and remains passionate about learning new skills and continuously upskilling himself.
+                He loves to write technical content articles in his free time and impart his knowledge to others. Apart from these, he is a very generous human being with a knack of socializing with people.
+            </p>
+            <p class="text">
+            Reach out to him at:  
+                <a href="https://www.linkedin.com/in/omkar-kadam05" target="_blank">
+                <i class="fab fa-linkedin icon-custom" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/omkarkd" target="_blank">
+                <i class="fab fa-github icon-custom"></i>
+            </a>
+  
+            
+            </p>
+            
+        </div>
+        <div class="footer">
+            <div>Copyright © 2021 </div>
+            <div> Made by Omkar Kadam </div>
+        </div>
+    </div>
+</body>
+</html>

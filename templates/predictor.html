@@ -1,0 +1,143 @@
+<!Doctype html>
+
+<HTML>
+  <HEAD>
+    <TITLE>Attriction Predictor</TITLE>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <style>
+    body{
+          background-image:url("{{url_for('static',filename = 'cool3.png')}}");
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      .footer-predictor{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    background-color: #000000;
+    padding: 10px 10px;
+    color: #ffffff;
+}
+    </style>
+  </HEAD>
+
+<BODY>
+
+<!-- Navigation bar -->
+<nav  class="navbar navbar-light" style="background-color: #000000;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{url_for('home')}}">Churn Prediction</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="{{url_for('predictor')}}">Predictor</a></li>
+      <li><a href="{{url_for('contact')}}">Contact Developer</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="predictor-wrapper">
+ <!-- Navigation bar ends --> 
+ <!--form starts here -->
+    <form method = "POST" action="/result" enctype="multipart/form-data">
+      <div class="container predictor-wrapper-container">
+    
+          <div class="form-row">
+            <div class="form-group col-md-5">
+              <label for="simdays">Number of Weeks</label>
+              <input type="text" class="form-control" name="simdays" placeholder="Enter the number of weeks since sim activation" required>
+            </div>
+          </div>
+      
+          <div class="form-row">
+            <div class="form-group col-md-5">
+              <label for="status">Sim renewal status</label>
+              <select required name="status" class="form-control" required>
+              <option value="">Choose...</option>
+              <option value=1>YES</option>
+              <option value=0>NO</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-row"> 
+            <div class="form-group col-md-5">
+              <label for="dataplan">Is Data Plan taken?</label>
+              <select name="dataplan" class="form-control" required>
+              <option value="">Choose...</option>
+              <option value=1>YES</option>
+              <option value=0>NO</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group col-md-5">
+              <label for="datausage">Data Usage (in GB/day)</label>
+              <input type="text" class="form-control" name="datausage" placeholder="Enter Data Usage value" required>
+            </div>
+          </div>
+    
+          <div class="form-row">
+              <div class="form-group col-md-5">
+                <label for="customercare">Calls to customer care</label>
+                <input type="text" class="form-control" name="customercare" placeholder="Enter number of calls made to customer care" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+              <div class="form-group col-md-5">
+                <label for="minutes">Minutes spent</label>
+                <input type="text" class="form-control" name="minutes" placeholder="Enter total number of minutes spend daily on call" required>
+              </div>
+          </div>
+          
+          <div class="form-row">
+              <div class="form-group col-md-5">
+                <label for="calls">Number of calls</label>
+                <input type="text" class="form-control" name="calls" placeholder="Enter total number of calls made in a day" required>
+              </div>
+          </div>
+        <div class="form-row">
+            <div class="form-group col-md-5">
+              <label for="monthlycharge">Monthly charges</label>
+              <input type="text" class="form-control" name="monthlycharge" placeholder="Enter monthly charges incurred" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group col-md-5">
+              <label for="overagefee">Overage Fees</label>
+              <input type="text" class="form-control" name="overagefee" placeholder="Enter Overage Fees value" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group col-md-5">
+            <label for="roammins">Roaming Minutes</label>
+            <input type="text" class="form-control" name="roammins" placeholder="Enter number of mins. spent on call in roaming" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <button type="submit" class="btn btn-primary">Make Prediction</button>
+          </div>
+        </div>
+  </div>
+</form> 
+</div>
+<!--form ends here -->
+  <div class="footer-predictor">
+            <div>Copyright © 2021 </div>
+            <div> Made by Omkar Kadam </div>
+        </div>
+</BODY>
+</HTML>

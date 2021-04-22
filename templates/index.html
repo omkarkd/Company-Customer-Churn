@@ -1,0 +1,68 @@
+<!doctype html>
+
+<HTML>
+	<HEAD>
+		<TITLE>Customer Attrition Prediction</TITLE>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+  		<style>
+      .footer{
+    display: flex;
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    background-color: #000000;
+    padding: 10px 10px;
+    color: #ffffff;
+    }
+    .text{
+    font-size: 22px;
+    color: #000000;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: 'Georgia', cursive;
+}  
+		</style>
+	</HEAD>
+
+<BODY>
+<!-- Navigation bar -->
+<nav class="navbar navbar-light" style="background-color:#000000;margin-bottom: 0px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{url_for('home')}}">Churn Prediction</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="{{url_for('predictor')}}">Predictor</a></li>
+      <li><a href="{{url_for('contact')}}">Contact Developer</a></li>
+    </ul>
+  </div>
+</nav>
+
+ <!-- Nav.igation bar ends -->	
+<div>
+  <div class="manish">
+    <img src="../static/Home.jpg" class="home-banner-image">
+  </div>
+  <div class="home-banner-content">
+
+    <h2 style="margin-top: 0;"><b>What is Customer Churn?</b></h2>
+<p class="text">
+  Customer churn is one of the most important metrics for a growing business to evaluate. Customer churn (also known as customer attrition) refers to when a customer(player,subscriber,user, etc.) ceases his or her relationship with a company. Online businesses typically treat a customer as churned once a particular amount of time has elapsed since the customer’s last interaction with the site or service. The full cost of churn includes both lost revenue and the marketing costs involved with replacing those customers with new ones. Reducing churn is a key business goal of every online business.</p>
+<p>Content credits: Optimove</p>
+  </div>
+</div>
+  <div class="footer">
+            <div>Copyright © 2021 </div>
+            <div> Made by Omkar Kadam </div>
+        </div>
+	
+</BODY>
+</HTML>
