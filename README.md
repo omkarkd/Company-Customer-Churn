@@ -1,15 +1,6 @@
 # Customer_Attrition_Prediction
 
-### Web App Link: https://customer-attrition-predictor.herokuapp.com/
-
-### Landing Page:
-![Screenshot (175)](https://user-images.githubusercontent.com/44601120/114270086-1fee1c80-9a28-11eb-8a48-f96c94982a06.png)
-
-### Predictor Page:
-![Screenshot (176)](https://user-images.githubusercontent.com/44601120/114270121-4b710700-9a28-11eb-8f3e-38a1d53fe18d.png)
-
-### Result Page:
-![Screenshot (177)](https://user-images.githubusercontent.com/44601120/114270177-95f28380-9a28-11eb-8bea-547a2bee1396.png)
+### Web App Link: 
 
 **About the dataset**
 
