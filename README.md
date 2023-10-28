@@ -1,7 +1,5 @@
 # Customer_Attrition_Prediction
 
-### Web App Link: https://know-your-subscriber.herokuapp.com/
-
 **About the dataset**
 
 The dataset consists of 3331 rows and 14 columns in total.
